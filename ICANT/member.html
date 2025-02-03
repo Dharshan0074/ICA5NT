@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Members</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+   <style>
+       body {
+           font-family: 'Titillium Web', sans-serif;
+           margin: 0;
+           padding: 0;
+           background: linear-gradient(to right, #f4f4f9, #e8e8f0);
+           color: #333;
+           line-height: 1.8;
+           animation: fadeIn 1.5s ease-in-out;
+       }
+
+       header {
+           background: linear-gradient(90deg, #1D3557, #457B9D);
+           color: white;
+           padding: 30px 40px;
+           text-align: center;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+
+       header h1 {
+           font-family: 'Playfair Display', serif;
+           font-size: 42px;
+           margin: 0;
+           animation: slideDown 1s ease-in-out;
+       }
+
+       .content {
+           padding: 40px;
+           background: #ffffff;
+           margin: 20px auto;
+           max-width: 1200px;
+           border-radius: 10px;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+           animation: fadeInUp 1s;
+       }
+
+       .organizing-committee {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+           gap: 20px;
+           text-align: center;
+           margin-bottom: 40px;
+       }
+
+       .organizing-committee .card {
+           border: 1px solid #457B9D;
+           border-radius: 8px;
+           padding: 20px;
+           background-color: #f9f9fb;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+           animation: cardHover 1s infinite alternate;
+       }
+
+       .organizing-committee .card:hover {
+           transform: translateY(-10px);
+           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+       }
+
+       .organizing-committee .card h3 {
+           font-family: 'Playfair Display', serif;
+           font-size: 20px;
+           color: #1D3557;
+           margin: 10px 0;
+       }
+
+       .organizing-committee .card p {
+           font-size: 16px;
+           color: #555;
+           margin: 0;
+       }
+
+       footer {
+           background: linear-gradient(90deg, #457B9D, #1D3557);
+           color: white;
+           text-align: center;
+           padding: 20px;
+           font-size: 14px;
+           animation: fadeInUp 1s;
+       }
+
+       footer a {
+           color: #A8DADC;
+           text-decoration: none;
+           margin: 0 10px;
+           font-weight: bold;
+           transition: color 0.3s ease;
+       }
+
+       footer a:hover {
+           color: #dd5e1e;
+       }
+
+       ul {
+           list-style: none;
+           padding: 0;
+           animation: fadeInUp 1.5s;
+       }
+
+       ul li {
+           margin-bottom: 10px;
+           padding: 10px;
+           background: #f4f4f9;
+           border-radius: 5px;
+           transition: transform 0.3s ease;
+       }
+
+       ul li:hover {
+           transform: translateY(-5px);
+           background: #e8e8f0;
+       }
+
+       @keyframes fadeIn {
+           from { opacity: 0; }
+           to { opacity: 1; }
+       }
+
+       @keyframes fadeInUp {
+           from { opacity: 0; transform: translateY(20px); }
+           to { opacity: 1; transform: translateY(0); }
+       }
+
+       @keyframes slideDown {
+           from { opacity: 0; transform: translateY(-20px); }
+           to { opacity: 1; transform: translateY(0); }
+       }
+
+       @keyframes cardHover {
+           0% { transform: scale(1); }
+           100% { transform: scale(1.05); }
+       }
+   </style>
+</head>
+<body>
+
+<header>
+   <h1>Organizing Committee</h1>
+</header>
+
+<div class="content">
+   <div class="organizing-committee">
+       <div class="card">
+           <h3>CHIEF PATRONS</h3>
+           <p>Shri.M.V.Muthuramalingam</p>
+           <p>Chairman</p>
+       </div>
+       <div class="card">
+           <h3>PATRONS</h3>
+           <p>Shri.M.V.M.Velmurugan</p>
+           <p>CEO</p>
+       </div>
+       <div class="card">
+           <h3>PATRONS</h3>
+           <p>Shri.M.V.M.Velmohan</p>
+           <p>Correspondent</p>
+       </div>
+       <div class="card">
+           <h3>PATRONS</h3>
+           <p>Shri.M.V.M.Sasikumar</p>
+           <p>Director</p>
+       </div>
+       <div class="card">
+           <h3>General Chair</h3>
+           <p>Shri.M.Vasu</p>
+           <p>Advisor</p>
+       </div>
+       <div class="card">
+           <h3>General Chair</h3>
+           <p>Shri.K.Razak</p>
+           <p>Advisor</p>
+       </div>
+       <div class="card">
+           <h3>General Chair</h3>
+           <p>Dr.N.Balaji</p>
+           <p>Principal</p>
+       </div>
+       <div class="card">
+           <h3>General Chair</h3>
+           <p>Dr.S.Soundararajan</p>
+           <p>Vice Principal</p>
+       </div>
+       <div class="card">
+           <h3>Convener</h3>
+           <p>Dr.B.Sridevi</p>
+           <p>Dean R&D / Professor / Head of ECE Department</p>
+       </div>
+       <div class="card">
+           <h3>Coordinator</h3>
+           <p>Dr.R.Jothi Chitra</p>
+           <p>Professor, ECE Department</p>
+       </div>
+       <div class="card">
+           <h3>Coordinator</h3>
+           <p>Dr.M.Sivarathinabala</p>
+           <p>Professor, ECE Department</p>
+       </div>
+       <div class="card">
+           <h3>Coordinator</h3>
+           <p>Mr.K.Ragupathy</p>
+           <p>Assistant Professor, ECE Department</p>
+       </div>
+   </div>
+
+   <h2>International Advisory Committee</h2>
+   <ul>
+       <li>Mr. Sheikji Nazirudeen, Product Manager, Google, Mountain View, California, United States.</li>
+       <li>Mr. Venky Annadurai, Vice President, Enterprise Data & Analytics at Patelco Credit, San Francisco.</li>
+       <li>Mrs. Usha Vadivelu, QA Manager IT Application, Intuitive Surgical, Sunnyvale, California, United States.</li>
+       <li>Dr. Tawfik Al-Hadhrami, Senior Lecturer, Nottingham Trent University, UK.</li>
+       <li>Prof. Pei Xiao, University of Surrey, Guildford, United Kingdom.</li>
+       <li>Dr. C. Senthilpari, Senior Lecturer, Faculty of Eng., Multimedia University, Malaysia.</li>
+       <li>Mrs. Hasanbanu Usman, Sr. Principal RF Engineer, Northrop Grumman, USA.</li>
+       <li>Mr. Vignesh Varma Murugesan, Data Architect, Enterprise Data and Analytics, Allegis Group, Maryland, United States.</li>
+   </ul>
+
+   <h2>National Advisory Committee</h2>
+   <ul>
+       <li>Dr. D. Vaithiyanathan, Professor & Head, Dept. of ECE, NIT, Delhi.</li>
+       <li>Mr. Rama Krishnan, Deputy Director DI, MSME, Chennai.</li>
+       <li>Dr. J. Sheeba Rani, Associate Professor, Department of Avionics, IISST, Trivandrum.</li>
+       <li>Dr. Pritee Khanna, Professor, Department of ECE, IIITDM, Jabalpur.</li>
+       <li>Dr. K. M. Bhurchandi, Professor, Visvesvaraya National Institute of Technology, Maharashtra.</li>
+       <li>Dr. Harigovindan V P, Associate Professor, HOD, Dept. of ECE, NIT, Puducherry.</li>
+       <li>Dr. P. Raviraj, Professor, HOD, GSSS Inst. of Engineering & Technology for Women, Karnataka.</li>
+       <li>Dr. S. Bose, Professor, Department of Computer Science and Engineering, Anna University, Chennai.</li>
+       <li>Dr. M. Mahesh, Assistant Professor, VIT-AP University.</li>
+       <li>Dr. G. Malathi, Professor Senior SCOPE, Vellore Institute of Technology, Chennai.</li>
+       <li>Dr. P. Pabitha, Associate Professor, Department of Computer Technology, Madras Institute of Technology, Chennai.</li>
+   </ul>
+</div>
+
+<footer>
+   <p>&copy; 2025 Velammal Institute of Technology. All rights reserved.</p>
+   <p>Designed by <a href="https://nemonextechnologies.netlify.app/" target="_blank">Nemonex Technologies</a></p>
+</footer>
+
+</body>
+</html>
